@@ -16,7 +16,7 @@ define(function (require) {
 
 //	bus.logger({ prefix: 'dead', tap: 'deadLetterChannel' });
 
-	socket = new SockJS('/spring-websocket-portfolio/portfolio');
+	socket = new SockJS('/portfolio');
 	socket.addEventListener('open', function () {
 		var bridge, portfolio, trade, app;
 
